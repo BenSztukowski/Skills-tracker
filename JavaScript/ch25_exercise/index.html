@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rocket Simulation</title>
+    <script src="./scripts.js"></script>
+    <style>
+      label { display: block; margin-bottom: 7px;}
+    </style>
+  </head>
+  <body>
+    <form method="post" action="https://handlers.education.launchcode.org/request-parrot">
+    <label>Test Name<input type = "text" name= "testName"/>
+    </label>
+    <label>Test Date<input type = "date" name = "testDate"/></label>
+    <label>Rocket Type</label>
+      <select name="rocketType">
+        <option value ="null">Select</option>
+        <option value="Brant">Brant</option>
+        <option value="Lynx">Lynx</option>
+        <option value="Orion">Orion</option>
+        <option value="Terrier">Terrier</option>
+      </select>
+    <label>Number<input type="number" name="boosterCount" min="0" max="9" value="0"/></label>
+    
+    <label>Wind Rating:</label>
+        <label>No wind (0)<input type="radio" name= "wind" value =0 /></label>
+        <label>Mid (10)<input type="radio" name= "wind" value =10 /></label>
+        <label>Strong (20)<input type="radio" name= "wind" value =20 /></label>
+
+    <label>Use production grade servers<input type="checkbox" name="productionServers" value="on"/></label>
+
+     <button>Run Simulation</button>
+
+    </form>
+    
+    <!-- TODO: add form here -->
+    
+
+    <p>WARNING: This ONLY works in <b>replit</b> if this "result" page is opened in its own window. Click the icon that shows a box with an arrow coming out of it.
+    </p>
+  </body>
+  
+</html>
